@@ -5,7 +5,7 @@ To use this bookmarklet
 + Create a new bookmark and add the line given below in the address of the bookmark.
 
 ```
-javascript:(function() {let i = 0;let win = window.open("https://google.com");win.close();let list = document.getElementsByClassName("VkhHKd e7EEH nQaZq");var interval = setInterval(function() {if (i == list.length) {clearInterval(interval);alert("Done !");return;}if (win.closed) {win = window.open("https://drive.google.com/u/" + location.href.split("/")[4] + "/uc?id=" + list[i].href.split("/")[list[i].href.split("/").length - 2] + "&export=download");i = i + 1;}}, 500);})();
+javascript:(function() {let buttons = document.getElementsByClassName("jWCzBe QRiHXd idtp4e u73Apc");for (const button of buttons) {button.click()};let i = 0;let win = window.open("https://google.com");win.close();let list = document.getElementsByClassName("VkhHKd e7EEH nQaZq");var interval = setInterval(function() {if (i == list.length) {clearInterval(interval);alert("Done !");return;}if (win.closed) {win = window.open("https://drive.google.com/u/" + location.href.split("/")[4] + "/uc?id=" + list[i].href.split("/")[list[i].href.split("/").length - 2] + "&export=download");i = i + 1;}}, 500);})();
 ```
 + Scroll to the bottom of the page until the loading sign dosen't appear anymore.
 + Click the bookmarklet on your Bookmarks Toolbar.
